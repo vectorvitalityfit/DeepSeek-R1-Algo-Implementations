@@ -139,6 +139,10 @@ where
 
 pi_theta is the current policy and pi_ref is the reference policy, o is the output and q is the input.
 
+## Conclusion
+
+This README has presented key advancements in reinforcement learning and reasoning models, focusing on GRPO’s innovative approach of estimating baseline rewards via group-relative comparisons without a separate critic network, enabling efficient scaling for large language models. We discussed knowledge distillation techniques that use soft labels and temperature scaling to transfer knowledge from complex teacher models to smaller, faster student models, maintaining accuracy while improving efficiency. Robust evaluation metrics such as Pass@1, Majority Voting, and Pass@k were introduced to reliably assess reasoning models that produce varied multiple responses, addressing output variability. Additionally, the use of KL divergence in RLHF and GRPO’s per-sample KL divergence estimator were explained as methods to ensure stable policy updates while remaining computationally feasible. These combined insights provide a comprehensive framework for effectively developing, evaluating, and optimizing advanced reasoning-capable models, supporting scalable and reliable AI solutions.
+
 ## References
 
 1. Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). Proximal Policy Optimization Algorithms. *arXiv preprint arXiv:1707.06347*. [https://arxiv.org/abs/1707.06347](https://arxiv.org/abs/1707.06347)
