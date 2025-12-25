@@ -1,3 +1,14 @@
+import numpy as np
+from collections import Counter
+
+def pass_at_1(responses_correct):
+    arrayy=np.array(responses_correct)
+    return arrayy.mean()
+
+def majority_voting(responses):
+    counts=Counter(responses)
+    return counts.most_common(1)[0][0]
+
 def pass_at_k(n:int,c:int,k:int)->float:
     """
     Compute unbiased pass@k from n samples with c correct.
