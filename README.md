@@ -70,7 +70,7 @@ Pass@1 measures the probability that a single response the model generates is co
 Majority voting shows how correct answers tend to be consistent across multiple generated responses, whereas incorrect answers are more variable. By choosing the most frequently occurring answer from multiple samples, majority voting will filter out inconsistent errors and will significantly improve accuracy for problems with a single unambiguous solution. This useful approach shines in domains like math problem-solving.
 
 ### Pass@k -> Probability of Success in k Attempts
-Pass@k measures the probability that at least one out of k generated responses is correct. This metric becomes useful in scenarioes like code generation, where any correct output among multiple attempts counts as success. Pass@k is computed using an unbiased estimator involving combinations. Efficient computational methods avoid dealing with large factorials, ensuring numerical stability.
+Pass@k measures the probability that at least one out of k generated responses is correct. This metric becomes useful in scenarios like code generation, where any correct output among multiple attempts counts as success. Pass@k is computed using an unbiased estimator involving combinations. Efficient computational methods avoid dealing with large factorials, ensuring numerical stability.
 
 ![Pass@k formula](https://latex.codecogs.com/png.latex?%5Ctext%7Bpass%40k%7D%20%3D%201%20-%20%5Cfrac%7B%5Cbinom%7Bn-c%7D%7Bk%7D%7D%7B%5Cbinom%7Bn%7D%7Bk%7D%7D)
 
