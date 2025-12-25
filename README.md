@@ -78,6 +78,17 @@ Pass@k formula: \[\text{pass@k} = 1 - \frac{\binom{n-c}{k{\binom{n}{k}}\] where 
 KL Divergence measures the difference between two probability distributions. In this case, it is the current policy and the original pre-trained policy. It acts as a penalty to prevent the model from drifting too far. However, the standard KL divergence formula requires summing over all possible outputs,  which is infeasible for language models with vast outputs.
 
 ### GRPO KL Divergence Estimator
-The Group Relative Policy Optimization algorithm introduces an unbiased, per-sample estimator for KL divergence. Instead of summing over all outputs, it calculates divergence based on the ratio of probabilities for a single sampled output. The formula is \[\text{KL estimate} = r-\ln(r)-1\] where \[r=\frac{\pi {ref}(o|q)}{\pi_{\theta}(o|q)}\]. \(\pi_{\theta}\) is the current policy and \(pi_{\ref}\) is the reference policy, \(o\) is the output and \(q\) is the input.
+
+The Group Relative Policy Optimization algorithm introduces an unbiased, per-sample estimator for KL divergence. Instead of summing over all outputs, it calculates divergence based on the ratio of probabilities for a single sampled output.
+
+GRPO uses a per-sample KL divergence estimator given by:
+
+![KL estimate](https://latex.codecogs.com/png.latex?%5Ctext%7BKL%20estimate%7D%20%3D%20r%20-%20%5Cln%28r%29%20-%201)
+
+where
+
+![r definition](https://latex.codecogs.com/png.latex?r%20%3D%20%5Cfrac%7B%5Cpi_%7B%5Ctext%7Bref%7D%7D%28o%7Cq%29%7D%7B%5Cpi_%7B%5Ctheta%7D%28o%7Cq%29%7D)
+
+pi_theta is the current policy and pi_ref is the reference policy, o is the output and q is the input.
 
 ## References
