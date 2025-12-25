@@ -140,3 +140,9 @@ where
 pi_theta is the current policy and pi_ref is the reference policy, o is the output and q is the input.
 
 ## References
+
+1. Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). Proximal Policy Optimization Algorithms. *arXiv preprint arXiv:1707.06347*. [https://arxiv.org/abs/1707.06347](https://arxiv.org/abs/1707.06347)
+2. Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. [http://incompleteideas.net/book/the-book-2nd.html](http://incompleteideas.net/book/the-book-2nd.html)
+3. OpenAI Spinning Up. (n.d.). Proximal Policy Optimization (PPO). [https://spinningup.openai.com/en/latest/algorithms/ppo.html](https://spinningup.openai.com/en/latest/algorithms/ppo.html)
+4. Deep ML. (n.d.). 101 Problems in Machine Learning. [https://www.deep-ml.com/problems/101?from=DeepSeek%20R1](https://www.deep-ml.com/problems/101?from=DeepSeek%20R1)
+5. Zhang, T., et al. (2025). DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. *arXiv preprint arXiv:2501.12948*. [https://arxiv.org/pdf/2501.12948](https://arxiv.org/pdf/2501.12948)
