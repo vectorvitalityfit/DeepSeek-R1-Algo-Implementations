@@ -52,7 +52,11 @@ The student model is trained to mimic the teacher's softened output distribution
 
 To ensure stability and effective learning, you scale the KL divergence by the square of the  temperature \( T^2 \). By doing this, it compensates for the effect of the temperature on the gradients during back propagation, keeping them consistent regardless of the temperature chosen.
 
-Mathematically, the distillation loss is given by the formula: \[
+Mathematically, the distillation loss is given by the formula:
+
+![Distillation loss](https://latex.codecogs.com/png.latex?L_%7B%5Ctext%7Bdistill%7D%7D%20%3D%20T%5E2%20%5Ctimes%20D_%7BKL%7D%5Cleft%28%5Csigma%5Cleft%28%5Cfrac%7Bz_t%7D%7BT%7D%5Cright%29%20%5Cparallel%20%5Csigma%5Cleft%28%5Cfrac%7Bz_s%7D%7BT%7D%5Cright%29%5Cright%29)
+
+ \[
 L_{\text{distill}} = T^2 \times D_{KL}\left(\sigma\left(\frac{z_t}{T}\right) \parallel \sigma\left(\frac{z_s}{T}\right)\right)
 \]
 where \( z_t \) and \( z_s \) are the logits from the teacher and student models respectively, and \( \sigma \) represents the softmax function.
