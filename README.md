@@ -39,6 +39,7 @@ where (A^hat)_t is the advantage estimate. The objective takes the minimum betwe
 
 ### PPO Pseudocode (Python-style)
 
+```python
 for each training iteration:
     for each timestep t in rollout:
         # Compute probability ratio of new and old policies
@@ -56,7 +57,7 @@ for each training iteration:
 
     # Update policy parameters by minimizing total loss over batch
     optimize(policy_parameters,loss=mean(loss_t over t))
-
+```
 
 ### GRPO -> A New Approach
 
