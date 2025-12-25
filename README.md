@@ -9,6 +9,7 @@ This repository provides hands-on implementations and explanations of core algor
 - [Evaluation Metrics Overview](#evaluation-metrics-overview)
 - [KL Divergence in RLHF](#kl-divergence-in-rlhf)
 - [GRPO KL Divergence Estimator](#grpo-kl-divergence-estimator)
+- [Conclusion](#conclusion)
 - [References](#references)
 
 ## Group Relative Policy Optimization
