@@ -141,7 +141,7 @@ pi_theta is the current policy and pi_ref is the reference policy, o is the outp
 
 ## Conclusion
 
-This README highlighted GRPO’s efficient reward estimation without a critic network, enabling scalable training of large language models. We covered knowledge distillation techniques for transferring expertise from teacher to student models using soft labels and temperature scaling. Key evaluation metrics—Pass@1, Majority Voting, and Pass@k—were presented to reliably measure reasoning models’ performance despite output variability. Finally, KL divergence methods, including GRPO’s per-sample estimator, help maintain stable and feasible policy updates. Together, these techniques offer a solid foundation for developing and evaluating advanced reasoning-capable AI models.
+This README highlighted GRPO’s efficient reward estimation without a critic network, enabling scalable training of large language models. We covered knowledge distillation techniques for transferring expertise from teacher to student models using soft labels and temperature scaling. Key evaluation metrics like Pass@1, Majority Voting, and Pass@k—were presented to reliably measure reasoning models’ performance despite output variability. Finally, KL divergence methods, including GRPO’s per-sample estimator, help maintain stable and feasible policy updates. Together, these techniques offer a solid foundation for developing and evaluating advanced reasoning-capable AI models.
 
 ## References
 
