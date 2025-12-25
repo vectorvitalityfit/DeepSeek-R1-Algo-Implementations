@@ -1,6 +1,9 @@
 # DeepSeek-R1-Paper-Implementations
 This repository provides hands-on implementations and explanations of core algorithms and evaluation metrics introduced in the DeepSeek-R1 paper. Using Python and NumPy, explore novel reinforcement learning techniques like Group Relative Policy Optimization (GRPO), efficient knowledge distillation methods, and robust metrics for evaluating reasoning models. Ideal for researchers and practitioners wanting to understand and reproduce DeepSeek-R1 contributions.
 
+## Table of Contents
+- [Introduction](#introduction)
+
 ## Group Relative Policy Optimization
 
 ### Introduction
