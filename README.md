@@ -9,6 +9,7 @@ This repository provides hands-on implementations and explanations of core algor
 - [Evaluation Metrics Overview](#evaluation-metrics-overview)
 - [KL Divergence in RLHF](#kl-divergence-in-rlhf)
 - [GRPO KL Divergence Estimator](#grpo-kl-divergence-estimator)
+- [References](#references)
 
 ## Group Relative Policy Optimization
 
@@ -73,3 +74,5 @@ KL Divergence measures the difference between two probability distributions. In 
 
 ### GRPO KL Divergence Estimator
 The Group Relative Policy Optimization algorithm introduces an unbiased, per-sample estimator for KL divergence. Instead of summing over all outputs, it calculates divergence based on the ratio of probabilities for a single sampled output. The formula is \[\text{KL estimate} = r-\ln(r)-1\] where \[r=\frac{\pi {ref}(o|q)}{\pi_{\theta}(o|q)}\]. \(\pi_{\theta}\) is the current policy and \(pi_{\ref}\) is the reference policy, \(o\) is the output and \(q\) is the input.
+
+## References
