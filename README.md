@@ -3,6 +3,12 @@ This repository provides hands-on implementations and explanations of core algor
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Group Relative Policy Optimization](#group-relative-policy-optimization)
+- [Knowledge Distillation](#knowledge-distillation)
+- [Challenges in Evaluating Reasoning Models](#challenges-in-evaluating-reasoning-models)
+- [Evaluation Metrics Overview](#evaluation-metrics-overview)
+- [KL Divergence in RLHF](#kl-divergence-in-rlhf)
+- [GRPO KL Divergence Estimator](#grpo-kl-divergence-estimator)
 
 ## Group Relative Policy Optimization
 
