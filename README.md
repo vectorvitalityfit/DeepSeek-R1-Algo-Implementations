@@ -83,6 +83,8 @@ n is the total number of samples, c is the number of correct samples, and k is t
 ## KL Divergence in RLHF
 KL Divergence measures the difference between two probability distributions. In this case, it is the current policy and the original pre-trained policy. It acts as a penalty to prevent the model from drifting too far. However, the standard KL divergence formula requires summing over all possible outputs,  which is infeasible for language models with vast outputs.
 
+![KL divergence](https://latex.codecogs.com/png.latex?D_%7BKL%7D%28%5Cpi_%5Ctheta%20%5Cparallel%20%5Cpi_%7B%5Ctext%7Bref%7D%7D%29%20%3D%20%5Csum_o%20%5Cpi_%5Ctheta%28o%7Cq%29%20%5Clog%20%5Cfrac%7B%5Cpi_%5Ctheta%28o%7Cq%29%7D%7B%5Cpi_%7B%5Ctext%7Bref%7D%7D%28o%7Cq%29%7D)
+
 ### GRPO KL Divergence Estimator
 
 The Group Relative Policy Optimization algorithm introduces an unbiased, per-sample estimator for KL divergence. Instead of summing over all outputs, it calculates divergence based on the ratio of probabilities for a single sampled output.
