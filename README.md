@@ -31,6 +31,9 @@ GRPO stands out by eliminating the need for a separate critic network. Instead, 
 
 ### GRPO Core Algorithm
 
+Here is the Advantage calculation formula:
+![Advantage calculation](https://latex.codecogs.com/png.latex?A_i%20%3D%20%5Cfrac%7Br_i%20-%20%5Ctext%7Bmean%7D%28r%29%7D%7B%5Ctext%7Bstd%7D%28r%29%7D)
+
 For each prompt, sample a group of outputs (size G) from the language model. Assign rewards \(r_i\) to each output based on correctness or quality. Calculate each output's advantage \(A_i\) using the formula: \[A_i = \frac{r_i - \text{mean}(r) {\text{std}(r)}\] where \(r_i-text{mean}(r)\) represents how much the reward deviates from the group average, and the denominator normalizes this by the standard deviation of the group's rewards, ensuring scale invariance.
 
 ## Knowledge Distillation
