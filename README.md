@@ -66,6 +66,8 @@ Reasoning models tend to output multiple possible solutions through different re
 ### Pass@1 -> Baseline Accuracy
 Pass@1 measures the probability that a single response the model generates is correct. It is calculated by averaging the correctness over all responses. This simple metric is efficient and serves as a baseline for comparing different models or configurations. Pass@1 reflects the expected accuracy when only one response per problem is considered.
 
+![Pass@1 formula](https://latex.codecogs.com/png.latex?%5Ctext%7BPass%40%201%7D%20%3D%20%5Cfrac%7B1%7D%7Bk%7D%20%5Csum_%7Bi%3D1%7D%5E%7Bk%7D%20p_i)
+
 ### Majority Voting (Consensus) -> Improving Accuracy
 Majority voting shows how correct answers tend to be consistent across multiple generated responses, whereas incorrect answers are more variable. By choosing the most frequently occurring answer from multiple samples, majority voting will filter out inconsistent errors and will significantly improve accuracy for problems with a single unambiguous solution. This useful approach shines in domains like math problem-solving.
 
