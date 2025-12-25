@@ -72,7 +72,9 @@ Majority voting shows how correct answers tend to be consistent across multiple 
 ### Pass@k -> Probability of Success in k Attempts
 Pass@k measures the probability that at least one out of k generated responses is correct. This metric becomes useful in scenarioes like code generation, where any correct output among multiple attempts counts as success. Pass@k is computed using an unbiased estimator involving combinations. Efficient computational methods avoid dealing with large factorials, ensuring numerical stability.
 
-Pass@k formula: \[\text{pass@k} = 1 - \frac{\binom{n-c}{k{\binom{n}{k}}\] where n is the total number of samples, c is the number of correct samples, and k is the number of attempts. This formula calculates the complement of the probability that all k samples are incorrect.
+![Pass@k formula](https://latex.codecogs.com/png.latex?%5Ctext%7Bpass%40k%7D%20%3D%201%20-%20%5Cfrac%7B%5Cbinom%7Bn-c%7D%7Bk%7D%7D%7B%5Cbinom%7Bn%7D%7Bk%7D%7D)
+
+n is the total number of samples, c is the number of correct samples, and k is the number of attempts. This formula calculates the complement of the probability that all k samples are incorrect.
 
 ## KL Divergence in RLHF
 KL Divergence measures the difference between two probability distributions. In this case, it is the current policy and the original pre-trained policy. It acts as a penalty to prevent the model from drifting too far. However, the standard KL divergence formula requires summing over all possible outputs,  which is infeasible for language models with vast outputs.
