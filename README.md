@@ -47,6 +47,10 @@ Traditional hard labels tend to use one-hot encoding (where a correct class is m
 
 To create these soft labels, the teacher's output logits are passed through a temperature-scaled softmax function. The temperature parameter T controls how softened or peaked the output probabilities are. A higher temperature means a softer, more uniform distribution that reveals more detailed information for the student to learn from.
 
+Softmax with temperature T used in knowledge distillation:
+
+![Softmax temperature](https://latex.codecogs.com/png.latex?%5Csigma_i%28z%2C%20T%29%20%3D%20%5Cfrac%7B%5Cexp%5Cleft%28%5Cfrac%7Bz_i%7D%7BT%7D%5Cright%29%7D%7B%5Csum_j%20%5Cexp%5Cleft%28%5Cfrac%7Bz_j%7D%7BT%7D%5Cright%29%7D)
+
 ### Distillation Loss Function
 The student model is trained to mimic the teacher's softened output distribution using a loss function based on the Kullback-Leibler (KL) divergence. KL divergence measures how different two probability distributions are. In this case, it calculates the difference between the teacher's soft labels and the student's prediction.
 
